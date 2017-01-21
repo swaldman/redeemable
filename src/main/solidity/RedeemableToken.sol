@@ -79,12 +79,12 @@ contract RedeemableToken {
 
   modifier onlyIssuer {
     if ( msg.sender != issuer ) throw;
-    _
+    _;
   }
 
   modifier notIssuer {
     if ( msg.sender == issuer ) throw;
-    _
+    _;
   }
 
   /*
